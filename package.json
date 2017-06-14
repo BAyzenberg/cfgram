@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BAyzenberg/33-custom-filters.git"
+    "url": "git+https://github.com/BAyzenberg/cfgram.git"
   },
   "keywords": [
     "Karma",
@@ -25,9 +25,9 @@
   "author": "Ben Ayzenberg",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BAyzenberg/33-custom-filters/issues"
+    "url": "https://github.com/BAyzenberg/cfgram/issues"
   },
-  "homepage": "https://github.com/BAyzenberg/33-custom-filters#readme",
+  "homepage": "https://github.com/BAyzenberg/cfgram#readme",
   "devDependencies": {
     "angular-mocks": "^1.6.4",
     "babel-polyfill": "^6.23.0",
