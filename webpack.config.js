@@ -43,12 +43,12 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        include: [
-          /node_modules\/camel-case/,
-          /node_modules\/camelcase/,
-          /node_modules\/camelcase-keys/,
-        ],
+        // exclude: /node_modules/,
+        // include: [
+        //   /node_modules\/camel-case/,
+        //   /node_modules\/camelcase/,
+        //   /node_modules\/camelcase-keys/,
+        // ],
         use: 'babel-loader',
       },
       {
