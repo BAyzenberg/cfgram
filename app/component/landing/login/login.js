@@ -12,6 +12,8 @@ function LoginController($log, $window, $location, authService) {
   this.$onInit = () => {
     $log.debug('LoginController');
 
+    this.title = 'Login';
+
     this.login = function() {
       $log.log('loginCtrl.login');
 

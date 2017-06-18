@@ -1,15 +1,16 @@
-<section>
+<section class="upload">
+  <h4>Upload picture</h4>
   <form
     ng-submit="uploadPicCtrl.uploadPic()"
     novalidate>
       <fieldset>
-        <label for="name">name</label>
+        <label for="name">Name: </label>
         <input
           type="text"
           name="name"
           placeholder="name"
           ng-model="uploadPicCtrl.pic.name">
-        <label for="desc">description</label>
+        <label for="desc">Description: </label>
         <input
           type="text"
           name="desc"

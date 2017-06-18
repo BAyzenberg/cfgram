@@ -1,0 +1,19 @@
+.navbar {
+  ul, li {
+    display: inline-block;
+  }
+
+  li {
+    border: 2px solid black;
+    margin: 0 10px;
+  }
+
+  button {
+    float: right;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}

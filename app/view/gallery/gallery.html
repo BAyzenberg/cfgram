@@ -1,12 +1,14 @@
-<section>
+<section class="gallery">
   <h2>{{ galleryCtrl.title }}</h2>
   <create-gallery></create-gallery>
 
-  <label for="filters">Filter for:</label>
-  <input
-    type="text"
-    name="filters"
-    ng-model="galleryCtrl.filter">
+  <div class="filter">
+    <label for="filters">Filter for:</label>
+    <input
+      type="text"
+      name="filters"
+      ng-model="galleryCtrl.filter">
+  </div>
 
   <ul>
     <gallery-item
@@ -17,13 +19,15 @@
     ng-repeat="item in galleryCtrl.galleries" gallery="item"></gallery-item>
   </ul>
 
-  <label for="gallery selection">Use: </label>
-  <select
-    name="gallery selection"
-    ng-options="item as item.name for item in galleryCtrl.galleries track by item._id"
-    ng-model="galleryCtrl.currentGallery"
-    >
- </select>
+  <div class="use">
+    <label for="gallery selection">Use: </label>
+    <select
+      name="gallery selection"
+      ng-options="item as item.name for item in galleryCtrl.galleries track by item._id"
+      ng-model="galleryCtrl.currentGallery"
+      >
+    </select>
+  </div>
 
   <thumbnail-container
     ng-if="galleryCtrl.currentGallery" gallery="galleryCtrl.currentGallery"></thumbnail-containter>
