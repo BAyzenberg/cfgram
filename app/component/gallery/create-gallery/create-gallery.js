@@ -9,6 +9,8 @@ module.exports = {
     this.$onInit = () => {
       $log.debug('Create Gallery Controller');
 
+      this.title = 'Create a new Gallery';
+
       this.gallery = {};
 
       this.createGallery = () => {
