@@ -1,27 +1,29 @@
 // :::: Vars ::::
 
-$primary-color: #BADDAD;
-$secondary-color: #DABACA;
+$primary-color: #33989C;
+$secondary-color: #F6B021;
 
 // :::: Mixins ::::
 
-@mixin soften {
+@mixin border {
   border: 2px solid black;
 }
 
 @mixin std-style {
   width: 85%;
   margin: auto;
+  background-color: $secondary-color;
 }
 
 @mixin std-header {
   @include std-style;
+  @include border;
   font-size: 1.5em;
   margin-top: 30px;
 }
 
 @mixin std-main {
-  @include soften;
+  @include border;
   @include std-style;
   font-size: 1.25em;
   margin-top: 3em;
@@ -39,4 +41,8 @@ header {
 
 main {
   @include std-main;
+}
+
+body {
+  background-color: $primary-color;
 }
